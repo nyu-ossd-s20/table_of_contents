@@ -3,9 +3,9 @@ function listenForClicks() {
     headerId = e.target.id
     document.getElementById("test").textContent = headerId
     // browser.tabs.sendMessage(tabs[0].id, {
-    //   headerId: headerId 
+    //   headerId: headerId
     // })
-    
+
   })
 }
 
@@ -19,11 +19,11 @@ function listenForClicks() {
 
 // });
 
-let portFromCS  
+let portFromCS
 
 function connected(p) {
   portFromCS = p;
-  
+
   portFromCS.onMessage.addListener(function(m) {
     m.headers.forEach((header, i) => {
       var temp = document.createElement(header.headerType)
@@ -37,15 +37,16 @@ function connected(p) {
     headerId = e.target.id
     document.getElementById("test").textContent = headerId
     // browser.tabs.sendMessage(tabs[0].id, {
-    //   headerId: headerId 
+    //   headerId: headerId
     // })
     portFromCS.postMessage({
+      headerID: headerId,
       greeting: "this works!"
     })
-    
+
   })
 
-  
+
 }
 
 browser.runtime.onConnect.addListener(connected);

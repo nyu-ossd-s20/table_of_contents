@@ -11,7 +11,7 @@
   var headerInfo = []
   headers.forEach((header, i) => {
     header.id = "h-" + i
-    
+
     headerInfo.push({
       textContent: header.textContent,
       headerType: header.tagName
@@ -24,9 +24,9 @@
     headers: headerInfo
   })
 
-  myPort.onMessage.addListener(function(m) {
-    document.getElementById("h-1").scrollIntoView()
-    document.getElementById("h-1").textContent = m.greeting
+  myport.onMessage.addListener(function(m) {
+    document.getElementById(m.headerID).scrollIntoView()
+    //document.getElementById(m.headerID).textContent = m.greeting
   });
 
 
