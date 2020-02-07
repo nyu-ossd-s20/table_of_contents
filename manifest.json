@@ -6,7 +6,7 @@
 
   "description": "Displays all of the headers in a webpage to list the table of contents",
   "icons": {
-    "48": "icons/beasts-48.png"
+    "48": "icons/toc-48.png"
   },
 
   "permissions": [
@@ -14,7 +14,7 @@
   ],
 
   "browser_action": {
-    "default_icon": "icons/beasts-32.png",
+    "default_icon": "icons/toc-32.png",
     "default_title": "Contents",
     "default_popup": "popup/index.html"
   }
