@@ -1,15 +1,10 @@
-
-function fillPopup() {
-  document.getElementById("clickme").addEventListener("click", () => {
-    var text = document.createElement("h3")
-    text.innerHTML = "hi"
-    document.getElementById("change").appendChild(text)
-  
-    // var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
+browser.runtime.onMessage.addListener((message) => { // gets the information from the content.js and displays it in the popup
+  message.headers.forEach((header) => {
+    var temp = document.createElement(header.headerType)
+    temp.textContent = header.textContent
+    document.getElementById("contents").appendChild(temp)
   })
-}
 
-
+});
 
 browser.tabs.executeScript({file: "/content_scripts/content.js"})
-.then(fillPopup)
