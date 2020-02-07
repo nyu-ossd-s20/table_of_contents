@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Table of Contents",
+  "version": "1.0",
+
+  "description": "Displays all of the headers in a webpage to list the table of contents",
+  "icons": {
+    "48": "icons/beasts-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "default_title": "Contents",
+    "default_popup": "popup/index.html"
+  }
+
+}
