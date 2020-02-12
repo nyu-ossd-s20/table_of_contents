@@ -24,6 +24,23 @@ Useful for blog style web pages and navigating coding docs.
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
+<!-- LICENSE -->
+## License
+
+Distributed under the MPL-2.0 License. See `LICENSE` for more information.
+
+<!-- CODE OF CONDUCT -->
+## Code of Conduct
+
+[We follow these community guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
+
+<!-- CONTACT -->
+## Contact
+
+* [Prince Carter](https://github.com/PrinceCarter)
+* [Kyla Yujiri](https://github.com/kylayujiri)
+* [Matthew Fan](https://github.com/mattfan00)
+
 
 
 
