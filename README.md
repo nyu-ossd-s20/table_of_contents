@@ -4,10 +4,10 @@ A Firefox extension that allows you to see a "table of contents" like overview o
 
 ## Installation
 
-1) Clone this repo, 
-2) Open Firefox, 
+1) Clone this repo
+2) Open Firefox
 3) Navigate to about:bugging 
-4) Load manifest.json
+4) Go to where you saved the project and load the manifest.json
 5) Go to any webpage and let the extension work its magic!
 
 ## Contributing
