@@ -14,7 +14,6 @@ function connected(p) {
 
   document.addEventListener("click", (e) => {
     headerId = e.target.id
-    document.getElementById("test").textContent = headerId
     portFromCS.postMessage({
       headerID: headerId,
       greeting: "this works!"
